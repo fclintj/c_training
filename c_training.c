@@ -16,14 +16,11 @@
 int main (int argc, char *argv[]){
     if(argc == 1){
         printf("zero arguments.\n");
+        return -1; 
     }
-    printf("%s\n",argv[1]);
-    double x = 0;
+    double x;
     sscanf(argv[1],"%lf",&x);
-    printf("%s\n", argv[2]);
     struct degree_coordinate input;
-//    printf("Enter an angle between 0 - 360:\n");
-//    scans("%lf",&input.circular_vaule);
     input.circular_vaule = x;
     calculate_quardinate_value(&input);
     print_coordinate(&input);
