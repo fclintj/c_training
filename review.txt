@@ -1,0 +1,6 @@
+
+printf(
+scanf(
+printf(
+getchar(
+
